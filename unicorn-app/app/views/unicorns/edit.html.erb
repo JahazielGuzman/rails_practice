@@ -1,0 +1,11 @@
+<h1>Edit <%= @unicorn.name %> </h1>
+
+<%= form_for @unicorn do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<%= f.label :horn %>
+	<%= f.text_field :horn %>
+	<%= f.label :shoe %>
+	<%= f.text_field :shoe %>
+	<%= f.submit %>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Show <%= @quest.name %></h1>
+
+<%= link_to "All the Quests in the kingdom", unicorns_path %> <%= link_to "Edit this unicorn", edit_unicorn_path(@quest) %> <%= button_to "Take it to the farm upstate", quest_path(@quest), method: :delete %>
+<ul>
+	<li>Name: <%= @quest.name %></li>
+	<li>Unicorn: <%= @quest.unicorn.name %></li>
+	<li>Leprechaun <%= @quest.leprechaun.name %></li>
+</ul>

@@ -1,0 +1,9 @@
+<h1>Hello!</h1>
+
+<%= link_to "Make your dreams fly!", new_unicorn_path %>
+
+<ul>
+	<% @unicorns.each do |unicorn| %>
+		<li><%= link_to unicorn.name, unicorn %></li>
+	<% end %>
+</ul>

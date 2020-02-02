@@ -1,0 +1,9 @@
+<h1>Hello!</h1>
+
+<%= link_to "Make your dreams fly!", new_leprechaun_path %>
+
+<ul>
+	<% @leprechauns.each do |leprechaun| %>
+		<li><%= link_to leprechaun.name, leprechaun %></li>
+	<% end %>
+</ul>

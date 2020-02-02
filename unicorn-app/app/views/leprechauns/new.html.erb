@@ -1,0 +1,11 @@
+<h1>Form to make new leprechaun</h1>
+
+<%= form_for @leprechaun do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<%= f.label :gold_count %>
+	<%= f.text_field :gold_count %>
+	<%= f.label :height %>
+	<%= f.text_field :height %>
+	<%= f.submit %>
+<% end %>

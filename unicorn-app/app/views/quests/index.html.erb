@@ -1,0 +1,7 @@
+<h1>Here are all the quests</h1>
+
+<% @quests.each do |quest| %>
+	<li><%= "Name: #{quest.name}"%></li>
+	<li><%= "Gold Count: #{quest.gold_count}"%></li>
+	<li><%= "Height: #{quest.height}"%></li>
+<% end %>
