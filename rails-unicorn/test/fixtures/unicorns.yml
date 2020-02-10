@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  horn_length: 1
+  shoe_size: 1
+
+two:
+  name: MyString
+  horn_length: 1
+  shoe_size: 1
