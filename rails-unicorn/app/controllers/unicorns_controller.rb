@@ -9,10 +9,15 @@ class UnicornsController < ApplicationController
         @unicorn = Unicorn.new(unicorn_params)
         if @unicorn.valid?
             @unicorn.save
-            render json: @unicorn
+            render json: @unicorn, status: :ok
         else
             render json: @unicorn.errors.full_messages
         end
+    end
+
+    def show
+        @unicorn = Unicorn.find(params[:id])
+        render json: @unicorn, status: 200
     end
 
     private
